@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     });
 
-    setTimeout(imgas, 200);
+    imgas();
 })
 
 let imgas = function(){
@@ -18,7 +18,7 @@ let imgas = function(){
     let images = document.querySelector('.about-us-images');
     let about = document.getElementById('About');
     let content = document.querySelector('.about-us-content');
-    if (query){
+    if (query.matches){
         images.style.opacity = '0.4';
         about.style.position = 'relative';
         images.style.position = 'absolute';
@@ -32,6 +32,24 @@ let imgas = function(){
         content.style.top = '50%';
         content.style.left = '50%';
         content.style.transform = 'translate(-50%, -50%)';
-        content.style.zIndex = 2;
-    }
+        content.style.zIndex = 2;}
+    // } else {
+    //     images.style.opacity = 1;
+    //     about.style.position = 'block';
+    //     images.style.position = 'block';
+    //     images.style.removeProperty('top');
+    //     images.style.removeProperty('left');
+    //     images.style.removeProperty('transform');
+    //     images.style.zIndex = 1;
+
+    //     about.style.display = 'block';
+    //     content.style.position = 'block';
+    //     images.style.opacity = 1;
+    //     about.style.position = 'block';
+    //     images.style.position = 'block';
+    //     images.style.removeProperty('top');
+    //     images.style.removeProperty('left');
+    //     images.style.removeProperty('transform');
+    //     content.style.zIndex = 2;
+    // }
 }
