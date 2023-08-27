@@ -25,13 +25,13 @@ let imgas = function(){
         images.style.top = '50%';
         images.style.left = '50%';
         images.style.transform = 'translate(-50%, -50%)';
-        images.style.zIndex = 10;
+        images.style.zIndex = 1;
 
         about.style.display = 'block';
         content.style.position = 'absolte';
         content.style.top = '50%';
         content.style.left = '50%';
         content.style.transform = 'translate(-50%, -50%)';
-        content.style.zIndex = 20;
+        content.style.zIndex = 2;
     }
 }
